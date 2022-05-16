@@ -154,6 +154,24 @@ header {
   border-radius: 0.5rem;
 }
 
+@media screen and (min-width: 425px) {
+  .slider__image {
+    height: 53vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .slider__image {
+    height: 54vw;
+  }
+}
+
+@media screen and (min-width: 719px) {
+  .slider__image {
+    height: 25rem;
+  }
+}
+
 .slider__image img {
   display: block;
   width: 100%;
@@ -184,6 +202,37 @@ header {
 .slider__slides {
   margin-top: -60vw;
   margin-top: calc(-55vw - 1rem);
+}
+
+@media screen and (min-width: 425px) {
+  .slider__controls {
+    justify-content: flex-end;
+    padding-top: 55.8vw;
+  }
+
+  .slider__controls-item:first-child {
+    padding-left: 0.5rem;
+  }
+
+  .slider__slides {
+    margin-top: -60vw;
+    margin-top: calc(-55.8vw - 1rem);
+  }
+
+  .slider__slide figcaption {
+    max-width: 70%;
+    padding-top: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 719px) {
+  .slider__controls {
+    padding-top: 25.9375rem;
+  }
+
+  .slider__slides {
+    margin-top: -26.9375rem;
+  }
 }
 
 .slider__controls .button {
